@@ -1,6 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,3 +16,97 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #23243D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #383A59;
+  border-radius: 5px;
+}
+
+.movie-overview p {
+  text-shadow: rgb(0, 0, 0) 0px 0px 25px;
+}
+
+.description {
+  text-shadow: rgb(0, 0, 0) 0px 0px 25px;
+}
+
+.shadow-img {
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%) !important; 
+}
+.pagination {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ justify-content: space-evenly;
+ min-width: 50vw;
+}
+
+ul {
+  margin-left: 50px;
+}
+li {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #F1E93A;
+}
+
+.image-gallery{
+  margin-top: 15px;
+}
+.image-gallery-image{
+  position: relative !important;
+  border-radius: 10px !important;
+}
+
+
+@media (max-width: 1130px) { 
+  .page-item {
+    margin-right: 25px; 
+  }
+ }
+ @media (max-width: 740px) {
+  .page-item {
+    margin-right: 15px;
+  }
+  .header{
+    margin-right: 10px;}
+ }
+ ul {
+   margin-left: 5px;
+ }
+
+@media (max-width: 580px) {
+  .page-item {
+    margin-right: 8px;}
+
+} 
+
+.top-pagination {
+  background-color: transparent;
+  margin-top: 25px;
+}
+
+.page-link{
+  color: #F5F5F1;
+  
+}
+
+.active {
+  transform: scale(1.2);
+}
+
+.active a {
+  color: #F1E93A;
+}
+
