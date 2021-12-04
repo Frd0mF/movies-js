@@ -38,7 +38,7 @@ const [topRated, setTopRated] = React.useState(false)
       {!isSearching && <SlideShow setCurrentTitle={setCurrentTitle} setCurrentDesc={setCurrentDesc}/>}
       <div className="shadow-img absolute bottom-0 p-4 left-0">
       <h1 className="description text-white mb-2">{currentTitle}</h1>
-      <p className="description text-xs sm:text-sm md:text-base lg:-text-lg text-white w-3/5 mb-6">{currentDesc}</p>
+      <p className="description desc-p text-xs sm:text-sm md:text-base lg:-text-lg text-white w-3/5 mb-6">{currentDesc}</p>
       </div>
       </div>
       <Footer totalPages={totalPages} setMovies={setMovies} FEATURED={FEATURED} homePage={homePage} setHomePage={setHomePage} isFiltered={isFiltered} isSearching={isSearching} search={search} topRated={topRated} />

@@ -109,7 +109,7 @@ export default function Navbar({setTotalPages, setMovies, FEATURED, setHomePage,
     return (
         <header className="flex justify-center lg:justify-between fixed top-0 w-full z-50 items-center bg-secondary h-14">
             <div className="flex items-center">
-                <img className="lg:ml-0 xl:ml-48 w-20 rounded-xl" src="./logo.png" alt="logo" />
+                <img className="logo lg:ml-0 xl:ml-48 w-20 rounded-xl" src="./logo.png" alt="logo" />
                <ul className="flex text-white">
                    <li className="header" onClick={handleNavClick}>Home</li>
                    <li className="header flex flex-col relative" onClick={toggleMenu}>Genre

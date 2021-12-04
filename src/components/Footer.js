@@ -42,7 +42,7 @@ export default function Footer ({totalPages, setMovies,FEATURED, homePage, setHo
         <ReactPaginate
             nextLabel="next >"
             onPageChange={handlePageClick}
-            pageRangeDisplayed={10}
+            pageRangeDisplayed={5}
             marginPagesDisplayed={2}
             pageCount={totalPages}
             previousLabel="< previous"
