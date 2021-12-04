@@ -33,7 +33,7 @@ const [topRated, setTopRated] = React.useState(false)
     return (
       <>
       <Navbar setTotalPages = {setTotalPages} setMovies={setMovies} FEATURED={FEATURED} setHomePage={setHomePage} isFiltered={isFiltered} setIsfiltered={setIsfiltered} setIsSearching={setIsSearching} search={search} setSearch={setSearch} setTopRated={setTopRated}/>
-      <h1 className="text-white text-3xl xl:w-1/2 lg:w-4/5 m-auto mt-4">In Theatre</h1>
+      <h1 className="text-white text-3xl xl:w-1/2 lg:w-4/5 m-auto pl-4 pt-20">In Theatres</h1>
       <div className="lg:w-full xl:w-1/2 m-auto relative">
       {!isSearching && <SlideShow setCurrentTitle={setCurrentTitle} setCurrentDesc={setCurrentDesc}/>}
       <div className="shadow-img absolute bottom-0 p-4 left-0">
